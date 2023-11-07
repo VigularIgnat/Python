@@ -1,0 +1,17 @@
+import turtle, random
+n=random.randint(50,300)
+p=random.randint(1,10)
+turtle.shape("arrow")
+turtle.width(p)
+turtle.color("blue")
+turtle.forward(n)
+turtle.left(90)
+turtle.color("yellow")
+turtle.forward(n)
+turtle.left(90)
+turtle.color("red")
+turtle.forward(n)
+turtle.left(90)
+turtle.color("green")
+turtle.forward(n)
+

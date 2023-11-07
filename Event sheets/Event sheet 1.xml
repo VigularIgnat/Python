@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="534468385050676">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="995685472143792">
+            <conditions>
+                <condition id="2" name="Key is down" sid="351221085038607" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="854582224724330" type="player1">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="220616059723423" type="player1">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="784072926527522">
+            <conditions>
+                <condition id="2" name="Key is down" sid="837822825201124" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="194966290156689" type="player1">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="615089981452127" type="player1">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875815616444249">
+            <conditions>
+                <condition id="2" name="Key is down" sid="839474053002630" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="326247112369815" type="player1">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="535320264994163">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="435581923835837" type="player1" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="816721545012496">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="548166754745115" type="player1" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="698359109287412" type="player1">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="245808627114735">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="268500614921590" type="player1" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="987695421857060" type="player1">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="120167713613210">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="753497939180860" type="player1" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="203721264782657" type="player1">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="471998341040328">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="694577952942511" type="player1">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="837129567365505" type="Sprite2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="659427341949816">
+            <conditions>
+                <condition id="2" name="Key is down" sid="821643571428112" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="896506717573204" type="player2">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="390772289059615" type="player2">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="171395125483120">
+            <conditions>
+                <condition id="2" name="Key is down" sid="307325311126203" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="927678534021567" type="player2">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="502173837611209" type="player2">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="937324249898911">
+            <conditions>
+                <condition id="2" name="Key is down" sid="516180615592537" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="623098339333537" type="player2">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="634286119944740">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="731392307266215" type="player2" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="859424415151493">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="428043689417581" type="player2" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="657395722439171" type="player2">
+                            <param id="0" name="Animation">&quot;Runpl2&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="789061973228065">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="456435783551245" type="player2" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="873901328388636" type="player2">
+                            <param id="0" name="Animation">&quot;Standpl2&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="579747202260607">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="996391100050428" type="player2" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="830203710086825" type="player2">
+                    <param id="0" name="Animation">&quot;Jumppl2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="717957425895948">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="542392337502230" type="player2">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="773107863349168" type="Sprite2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

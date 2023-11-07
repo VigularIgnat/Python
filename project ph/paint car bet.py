@@ -1,0 +1,61 @@
+import turtle
+t=turtle.Pen()
+dog=turtle.Pen()
+top=turtle.Pen()
+far=turtle.Pen()
+t.color(1,0,1)
+far.color(0,1,0)
+def my_square(site, siteb, fill):
+    if fill== True:
+        t.begin_fill()
+    for x in range(1,3):
+        t.forward(site)
+        t.left(90)
+        t.forward(siteb)
+        t.left(90)
+    if fill== True:
+        t.end_fill()
+        
+my_square(150,50,True)
+
+dog.color(0,1,0)
+dog.up()
+dog.forward(10)
+dog.down()
+dog.begin_fill()
+dog.circle(10)
+dog.end_fill()
+dog.up()
+dog.forward(120)
+dog.down()
+dog.begin_fill()
+dog.circle(10)
+dog.end_fill()
+#перехід на верхній блок
+top.up()
+top.left(90)
+top.forward(50)
+top.right(90)
+top.forward(20)
+top.left(90)
+top.down()
+for i in range(1,2):
+    top.forward(30)
+    top.right(90)
+    top.forward(90)
+    top.right(90)
+    top.forward(30)
+top.right(90)
+top.forward(90)
+#фара
+far.up()
+far.forward(150)
+far.left(90)
+far.forward(40)
+far.down()
+far.right(90)
+for i in range(1,3):
+    far.forward(20)
+    far.right(90)
+    far.forward(10)
+    far.right(90)

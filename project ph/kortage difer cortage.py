@@ -1,0 +1,6 @@
+k1=("apple","banana","cherry")
+k2=(1,5,7,9,3)
+k3=(True, False, False)
+print(k1)
+print(k2)
+print(k3)
